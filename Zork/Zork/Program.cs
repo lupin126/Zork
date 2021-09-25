@@ -4,7 +4,7 @@ namespace Zork
 {
     class Program
     {
-        private static string Location
+        private static Room Location
         {
             get
             {
@@ -16,9 +16,11 @@ namespace Zork
         {
             Console.WriteLine("Welcome to Zork!");
 
+            InitializeRoomDescriptions();
+
             while (true)
             {
-                Console.Write($"{Location}\n> ");
+                Console.Write($"{Location.Name}\n> ");
                 Commands command = ToCommand(Console.ReadLine().Trim());
                 if (command == Commands.QUIT)
                 {
@@ -32,7 +34,7 @@ namespace Zork
                         outputString = "Thank you for playing!";
                         break;
                     case Commands.LOOK:
-                        outputString = "This is an open field west of a white house, with a boarded front door.\nA rubber mat saying 'Welcome to Zork!' lies by the front door.";
+                       outputString = Location.Description;
                         break;
 
                     case Commands.NORTH:
@@ -59,13 +61,13 @@ namespace Zork
 
             switch (command)
             {
-                case Commands.NORTH when LocationRow < Rooms.GetLength(1) - 1:
-                    LocationRow++;
+                case Commands.NORTH when LocationRow < Rooms.GetLength(0) - 1:
+                    LocationRow--;
                     didMove = true;
                     break;
 
                 case Commands.SOUTH when LocationRow > 0:
-                    LocationRow--;
+                    LocationRow++;
                     didMove = true;
                     break;
 
@@ -85,11 +87,26 @@ namespace Zork
 
         private static Commands ToCommand(string commandString) => Enum.TryParse(commandString, true, out Commands result) ? result : Commands.UNKNOWN;
 
-        private static string[,] Rooms =
+        private static void InitializeRoomDescriptions()
         {
-            {"Dense Woods", "Notrh of House", "Clearing" },
-            {"Forest", "West of House", "Behind House" },
-            {"Rocky Trail", "South of House", "Canyon View" }
+            Rooms[0, 0].Description = "This is a dimly lit forest, with large trees all around. To the east, there appears to be sunlight.";
+            Rooms[0, 1].Description = "You are facing the north side of a white house. There is no door here, and all the windows are barred.";
+            Rooms[0, 2].Description = "You are in a clearing, with a forest surrounding you on the west and south.";
+
+            Rooms[1, 0].Description = "This is a forest, with trees in all directions around you.";
+            Rooms[1, 1].Description = "This is an open field west of a white house, with a boarded front door.";
+            Rooms[1, 2].Description = "You are behind the white house. In one corner of the house there is a small window which is slightly ajar.";
+
+            Rooms[2, 0].Description = "You are on a rock-strewn trail.";
+            Rooms[2, 1].Description = "You are facing the south side of a white house. There is no door here, and all the windows are barred.";
+            Rooms[2, 1].Description = "You are at the top of the Great Canyon on its south wall.";
+        }
+
+        private static Room[,] Rooms =
+        {
+            {new Room("Dense Woods"),   new Room("North of House"),   new Room("Clearing") },
+            {new Room("Forest"),        new Room("West of House"),    new Room("Behind House") },
+            {new Room("Rocky Trail"),   new Room("South of House"),   new Room("Canyon View") }
         };
         private static int LocationColumn = 1;
         private static int LocationRow = 1;

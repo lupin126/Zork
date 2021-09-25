@@ -1,0 +1,21 @@
+E:\School\Fall 2021\Game Design Tools & Plugins\Zork\Zork\Zork\Zork\bin\Debug\Zork.exe.config
+E:\School\Fall 2021\Game Design Tools & Plugins\Zork\Zork\Zork\Zork\bin\Debug\Zork.exe
+E:\School\Fall 2021\Game Design Tools & Plugins\Zork\Zork\Zork\Zork\bin\Debug\Zork.pdb
+E:\School\Fall 2021\Game Design Tools & Plugins\Zork\Zork\Zork\Zork\obj\Debug\Zork.csproj.AssemblyReference.cache
+E:\School\Fall 2021\Game Design Tools & Plugins\Zork\Zork\Zork\Zork\obj\Debug\Zork.csproj.CoreCompileInputs.cache
+E:\School\Fall 2021\Game Design Tools & Plugins\Zork\Zork\Zork\Zork\obj\Debug\Zork.exe
+E:\School\Fall 2021\Game Design Tools & Plugins\Zork\Zork\Zork\Zork\obj\Debug\Zork.pdb
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork\Zork\bin\Debug\Zork.exe.config
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork\Zork\bin\Debug\Zork.exe
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork\Zork\bin\Debug\Zork.pdb
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork\Zork\obj\Debug\Zork.csprojAssemblyReference.cache
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork\Zork\obj\Debug\Zork.csproj.CoreCompileInputs.cache
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork\Zork\obj\Debug\Zork.exe
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork\Zork\obj\Debug\Zork.pdb
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork 3-2\Zork\obj\Debug\Zork.csproj.CoreCompileInputs.cache
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork 3-2\Zork\obj\Debug\Zork.exe
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork 3-2\Zork\obj\Debug\Zork.pdb
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork 3-2\Zork\obj\Debug\Zork.csproj.AssemblyReference.cache
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork 3-2\Zork\bin\Debug\Zork.exe.config
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork 3-2\Zork\bin\Debug\Zork.exe
+D:\School\Fall 2021\Tools & Plugins\Zork\Zork 3-2\Zork\bin\Debug\Zork.pdb
