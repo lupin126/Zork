@@ -25,7 +25,9 @@ namespace Zork
 
             Room previousLocation = null;
 
-            while (true)
+            Commands command = Commands.UNKNOWN;
+
+            while (command != Commands.QUIT)
             {
                 Console.WriteLine(Location.Name);
 
@@ -37,18 +39,17 @@ namespace Zork
 
                 Console.Write("> ");
 
-                Commands command = ToCommand(Console.ReadLine().Trim());
-
-                if (command == Commands.QUIT)
-                {
-                    break;
-                }
+                command = ToCommand(Console.ReadLine().Trim());
 
                 string outputString;
                 switch (command)
                 {
+                    case Commands.QUIT:
+                        outputString = "Thank you for playing!";
+                        break;
+
                     case Commands.LOOK:
-                       outputString = Location.Description;
+                        outputString = Location.Description;
                         break;
 
                     case Commands.NORTH:
@@ -65,7 +66,7 @@ namespace Zork
 
                 Console.WriteLine(outputString);
             }
-            Console.WriteLine("Thank you for playing!\nFinished.") ;
+            Console.WriteLine("Finished.") ;
         }
 
         private static bool Move(Commands command)
