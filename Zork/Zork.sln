@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.31624.102
+VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zork", "Zork\Zork.csproj", "{023CEF78-DE55-41DE-BE70-1EE43372DA81}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zork", "Zork\Zork.csproj", "{F24A9AB7-31BA-4158-96D6-70E3FA9E8126}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{023CEF78-DE55-41DE-BE70-1EE43372DA81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{023CEF78-DE55-41DE-BE70-1EE43372DA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{023CEF78-DE55-41DE-BE70-1EE43372DA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{023CEF78-DE55-41DE-BE70-1EE43372DA81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F24A9AB7-31BA-4158-96D6-70E3FA9E8126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F24A9AB7-31BA-4158-96D6-70E3FA9E8126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F24A9AB7-31BA-4158-96D6-70E3FA9E8126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F24A9AB7-31BA-4158-96D6-70E3FA9E8126}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B4842C4E-2B29-41E7-B5B6-12231269AF0D}
+		SolutionGuid = {EEDC06B9-BDCA-44BE-A34E-AC834DC3349F}
 	EndGlobalSection
 EndGlobal
