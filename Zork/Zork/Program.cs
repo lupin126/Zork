@@ -1,21 +1,32 @@
-﻿using System.IO;
-using Newtonsoft.Json;
+﻿using System;
 
 namespace Zork
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            const string defaultGameFilename = "Zork.json";
-            string gameFilename = (args.Length > 0 ? args[(int)CommandLineArguments.GameFilename] : defaultGameFilename);
-            Game game = JsonConvert.DeserializeObject<Game>(File.ReadAllText(gameFilename));
-            game.Run();
+            const string defaultGameFileName = "Zork.json";
+            string gameFileName = (args.Length > 0 ? args[(int)CommandLineArguments.RoomsFileName] : defaultGameFileName);
+
+            ConsoleInputService input = new ConsoleInputService();
+            ConsoleOutputService output = new ConsoleOutputService();
+
+            Game.StartFromFile(gameFileName, input, output);
+            Game.Instance.CommandManager.PerformCommand(Game.Instance, "LOOK");
+
+            while (Game.Instance.IsRunning)
+            {
+                output.Write("\n> ");
+                input.GetInput();
+            }
+
+            output.WriteLine("Thank you for playing!");
         }
 
         private enum CommandLineArguments
         {
-            GameFilename = 0
+            RoomsFileName = 0
         }
     }
 }
